@@ -1,0 +1,30 @@
+{% load static %}
+
+   <!-- Showcase -->
+   <section class="p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+    <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+        <div>
+            <h1>Distribution & Promotion des <br><span class="text-danger">  consommables medicaux </span></h1>
+            <p class="lead my-4">
+                Votre Santé, Notre Priorité : <br>
+                Matériel Médical de Qualité à Portée de Main 
+                Nous vous proposons une large gamme de produits de qualité pour votre bien-être 
+                et votre santé.
+            </p>
+           
+            <a 
+                href="{% url 'catalogue' %}" 
+                class="btn btn-primary btn-lg" >
+                Consulter notre catalogue
+            </a>
+        </div>
+
+        <img
+            class="img-fluid w-50 d-none d-sm-block"
+            src="{% static 'images/im-1.jpg' %}"
+            alt=""
+        />
+        </div>
+    </div>
+   </section>

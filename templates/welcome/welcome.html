@@ -1,0 +1,88 @@
+{% extends 'base/main.html' %}
+{% load static %}
+
+{% block title %}
+    Accord Pharma...
+{% endblock %}
+
+{% block content %}
+
+<style>
+    .card-img-top {
+        height: 300px;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+    
+    .card:hover .card-img-top {
+        transform: scale(1.05);
+    }
+</style>
+
+ <!-- Gallery Section -->
+ <section class="p-5">
+    <div class="container">
+   <div class="row g-4">
+        
+    <div class="col-md-4">
+        <div class="card h-100">
+            <a href="{% url 'consommable' %}">
+                <img
+                    src="{% static 'images/conso-1.jpg' %}" 
+                    class="card-img-top" class="img-fluid rounded" 
+                    alt="Œuvre 1"
+                >
+            </a>
+            <div class="card-body">
+                <h5 class="card-title">Consommables medicaux</h5>
+                <p class="card-text">Votre Bien-être, Notre Engagement : Matériel Médical de Premier Choix</p>
+              
+            </div>
+        </div>
+    </div>
+    
+    <!--  -->
+    <div class="col-md-4">
+        <div class="card h-100">
+            <a href="{% url 'complement' %}">
+                <img
+                    src="{% static 'images/complement-1.jpg' %}" 
+                    class="card-img-top" class="img-fluid rounded" 
+                    alt="Œuvre 1"
+                >
+            </a>
+            <div class="card-body">
+                <h5 class="card-title">Complements alimentaires</h5>
+                <p class="card-text">Combler les Carences Nutritionnelles : Ils fournissent des vitamines, minéraux et autres  nutriments ...
+                    nutriments... </p>
+                
+            </div>
+        </div>
+    </div>
+
+    <!--  -->
+    <div class="col-md-4">
+        <div class="card h-100">
+            <a href="{% url 'representation' %}">
+                <img
+                    src="{% static 'images/representation-1.jpg' %}" 
+                    class="card-img-top" class="img-fluid rounded" 
+                    alt="Œuvre 1"
+                >
+            </a>
+            <div class="card-body">
+                <h5 class="card-title">Representation & promotion</h5>
+                <p class="card-text"> liaison entre les laboratoires pharmaceutiques internationaux et le marche togolais. </p>
+                
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+
+
+
+
+
+{% endblock %}

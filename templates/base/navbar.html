@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-lg bg-primary" >
+    <div class="container">
+      <a class="navbar-brand fs-4 text-light " href="{% url 'welcome' %}">Accord Pharma</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+
+          <!-- 1er item -->
+          <li class="nav-item dropdown">
+            <a class="nav-link fs-5 pe-4 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-journal-bookmark-fill"></i> &nbsp Nos activites
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item fs-5" href="{% url 'consommable' %}"> <i class="bi bi-truck"></i> &nbsp Distribution de consommables medicaux</a></li>
+              <li><a class="dropdown-item fs-5" href="{% url 'promotion' %}"> <i class="bi bi-emoji-wink-fill"></i> &nbsp Promotion</a></li>
+              <li><a class="dropdown-item fs-5" href="{% url 'representation' %}"> <i class="bi bi-person-workspace"></i> &nbsp Representation commerciale</a></li>
+              <li><a class="dropdown-item fs-5" href="{% url 'complement' %}"> <i class="bi bi-capsule"></i> &nbsp Complements alimentaires</a></li>
+            </ul>
+          </li>
+  
+
+
+          <!-- 2eme item -->
+          <li class="nav-item">
+            <a class="nav-link fs-5 pe-4" href="{% url 'import_export' %}"> <i class="bi bi-bag-check-fill"></i> &nbsp Import / Export</a>
+          </li>
+
+          <!-- 3eme item -->
+          <li class="nav-item">
+            <a class="nav-link fs-5" href="{% url 'about' %}"> <i class="bi bi-file-earmark-person-fill"></i>&nbsp A propos</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>

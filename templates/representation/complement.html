@@ -1,0 +1,94 @@
+{% extends 'base/main.html' %}
+{% load static %}
+
+{% block title %}
+    Representation...
+{% endblock %}
+
+{% block content %}
+
+
+
+   <!--LES COMPLEMENTS ALIMENTAIRES -->
+   <section class="p-5 mt-5">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-md">
+            <img src="{% static 'images/complements/complement-2.jpg' %}" class="img-fluid" alt="" />
+        </div>
+        <div class="col-md p-5">
+          <h1> <span class="text-danger"> Les compléments alimentaires pourquoi ? </span></h1>
+          <p class="lead" style="text-align:justify">
+
+            Les compléments alimentaires jouent un rôle important dans le maintien d'une bonne santé, surtout 
+            lorsque notre alimentation seule ne suffit pas à couvrir tous nos besoins nutritionnels. Voici quelques 
+            raisons pour lesquelles vous devriez choisir de prendre des compléments alimentaires:
+
+          </p>
+          <p>
+            <ul class="lead">
+                <li> Combler les carences nutritionnelles  </li>
+                <li> Soutenir la santé générale  </li>
+                <li> Renforcer le système immunitaire  </li>
+                <li> Améliorer les performances sportives ...</li>
+            </ul>
+          </p>
+          <a href="#" class="btn btn-light mt-3">
+            <i class="bi bi-chevron-right"></i> Read More
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Accord Pharma -->
+    <section id="learn" class="p-3">
+        <div class="container">
+    
+          <div class="row align-items-center justify-content-between">
+            <div class="col-md">
+              <p class="display-5 text-center"> 
+                Pour répondre aux déficits en nutriments de la population, Accord pharma met a leur 
+                disposition des compléments élaborés par des fabricants certifiés...…. Renfo 
+             </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="p-5  mt-5">
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-md p-5">
+              <h2>Les gammes de complement alimentaire</h2>
+              <p class="lead" >
+                <p class="lead" style="text-align:justify"> Renforcement osseuse :Certaines personnes peuvent avoir 
+                    des carences en vitamines ou minéraux spécifiques, comme le fer, la vitamine D, ou le calcium, 
+                    et les compléments peuvent aider à combler ces lacunes
+                </p>  
+                <p class="lead" style="text-align:justify">
+                  Renforcement de l'uminite : Certains compléments, comme la vitamine C ou le zinc, 
+                  sont souvent pris pour aider à renforcer le système immunitaire et réduire la durée des infections.
+                </p>
+                <p class="lead" style="text-align:justify">
+                  Performance sportive : Les athlètes et les personnes actives peuvent utiliser des 
+                  compléments pour améliorer leur endurance, leur récupération musculaire, et leurs 
+                  performances physiques.
+                </p>  
+              </p>
+              
+              <a href="#" class="btn btn-light mt-3">
+                <i class="bi bi-chevron-right"></i> Read More
+              </a>
+            </div>
+            <div class="col-md">
+                <img src="{% static 'images/complements/complement-4.jpg' %}" class="img-fluid" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+{% endblock %}
